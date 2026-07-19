@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color:black;
+    background-color:#dcd0b8;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif; /* Твой любимый шрифт для заголовков */
+}
+
+.logo{
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: #574737;
+    letter-spacing:1 px ;
+    margin: 0%;
+}
+
+.adres{
+    margin:1px;
+    font-size: 30px;
+    font-weight: 150;
+}
+
+.shapka {
+    display: flex;          /* Всё, что внутри, выстраивается в один ряд */
+    align-items: center;    /* Выравнивает всё по вертикали по центру */
+    justify-content: space-between; /* Расталкивает: лого влево, контакты вправо */
+}
+
+.zvonok {
+    display: flex;          /* Внутри блока с контактами тоже включаем ряд */
+    align-items: center;    /* Чтобы номер и кнопка были на одном уровне */
+    gap: 90px;              /* Расстояние между номером и кнопкой */
+}
+
+.nomer{
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.btn-call{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: #ccaf93;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid #4a2d09;
+    font-size: 24px;
+}
+.btn-call:hover{
+    background-color: #574737;
+    cursor: pointer;
+}
+
+#rek{
+    font-size: 60px;
+    color:#5b524a
+}
+#podrek{
+    font-size: 40px;
+}
+
+.zakaz{
+    color: #ede4da ;
+    background-color:#87725e ;
+    border-radius: 10px;
+    padding: 20px 60px;
+    font-size: 27px;
+    font-weight:bold;
+    margin-right: 20px;
+    font-family: "playfair displey";
+}
+.zakaz:hover{
+    background-color:#4d3e30;
+    cursor: pointer;
+}
+
+.info{
+     color: #87725e ;
+    background-color:#ede4da ;
+    border-radius: 10px;
+    padding: 20px 60px;
+    font-size: 27px;
+    font-weight:bold;
+    border: 2px solid #574737;
+    font-family: "playfair displey";
+}
+.info:hover{
+    background-color:#dfd3c6;
+    cursor: pointer;
+}
+
+.for-osnova{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #e3dad1;
+}
+
+.image img {
+    width: 600px;        /* Фиксированный небольшой размер */
+    height: 600px;       /* Квадратная форма */
+    object-fit: cover;   /* Обрезает лишнее, сохраняя пропорции */
+    border-radius: 30px; /* Скругляет края */
+    display: block;      /* Убирает лишние отступы под картинкой */
+    margin-top: 1px;
+}
+.osnova{
+   flex: 1;
+}
+
+#start-katalog{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+    color: #473b2f;
+}
+
+.category-buttons a{
+    color: black;
+    text-decoration: none;
+    background-color: #ac9c8d;
+    padding: 20px 40px;
+    border-radius: 13px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-right:10px;
+   ;
+}
+.category-buttons a:hover{
+    background-color: #e8e0ce;
+    cursor: pointer;
+}
+.we{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.text{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: px;
+
+}
+ul li{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.osobennost{
+    display:flex;
+    gap:100px;
+    margin-bottom: 20px;
+    justify-content: center
+}
+.block{
+    width: 30%;
+    padding: 10px 20px;
+    background-color: #e8e0ce;
+    font-size: 35px;
+    font-weight: 500;
+    color: #332920;
+    border-radius: 20px;
+    border:3px solid #7c7875;
+    font-family: playfair display;
+    box-shadow:0 0 20px #af7b76;
+}
+
+.absolut{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.photo img{
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    display: block;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(255, 100, 100, 0.5);
+    margin-bottom: 30px;
+}
+.redaction{
+    flex:1;
+}
+.all{
+    text-align: center;
+    margin-top: 70px;
+}
+#dostavka a{
+    color: black;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 40px;
+}
+#dostavka a:hover{
+    color: #5b524a;
+}
+
+.rezhim{
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #ac9c8d;
+    border-radius: 15px;
+    
+}
+.oplata h3{
+    font-size: 30px;
+}
+.oplata {
+    padding: 0px 50px;
+    background-color: #ac9c8d;
+    border-radius: 15px;
+    width: 50%;
+    
+}
+.oplata li{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;                 
+    font-size: 30px;                  
+    line-height: 1.5;                 
+}
+.wrapper-info{
+    display: flex;
+    gap: 80px;
+    align-items: flex;
+}
+.dostavochka{
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #ac9c8d;
+    border-radius: 15px;
+    
+}
+.levo{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;              
+    width: 40%;
+}
+
+.pochti-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #dcd3ca; 
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+}
+
+.pochti-end h3 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    color: #3b3426;
+}
+
+.pochti-end button {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    background-color: #8b7370;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid #3b3426;
+    padding: 10px 25px;
+}
+
+.pochti-end img {
+    width: 400px; 
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(182, 18, 241, 0.1);
+    margin: 0; 
+    display: block;
+}
+
+
+.end{
+    background-color: #d3c1b3;
+    
+
+}
+#kontakty{
+    font-size: 23px;
+    font-weight: 400;
+    padding: 10px;
+}
+.ssilka a{
+    color: black;
+    font-size: 30px;
+}
+.ssilka a:hover{
+    color: #332920;
+}
+.end-information{
+    font-size: 22px;
+    text-align: right;
+    padding: 1px 20px;
+}
+.kategory a{
+    color: black;
+    font-size: 22px;
+}
+.kategory a:hover{
+    color: #47301a;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.product-card{
+    background-color: #e1ccb8;
+    border-radius: 10px;
+    border: 1px solid #655c53;
+    padding: 10px;
+    text-align: center;
+}
+.product-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+}
+.product-grid{
+    padding-bottom: 80px;
+}
+.product-card h3{
+    margin: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "playfair display", serif;
+}
+.product-card p{
+    font-family: "roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.otziv {
+    display: flex;                
+    gap: 20px;  
+    justify-content: center;                  
+}
+.card{
+    background-color: #ead8c8;
+    border: 2px solid #574737;
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgb(220, 174, 174);
+    font-size: 25px;
+}
+.otziv h3{
+    margin-bottom: px;
+}
+.wow{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;     /* Запрещает перенос карточек на новую строку */
+    overflow-x: auto;      /* Появляется полоса прокрутки, если карточек много */
+    gap: 20px;             /* Расстояние между акциями */
+    padding-bottom: 20px;  /* Отступ для красоты */
+    -webkit-overflow-scrolling: touch; /* Плавный скролл на iPhone */
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    height: 8px;           /* Скрывает уродливую полосу прокрутки в некоторых браузерах */
+}
+
+.scrolling-wrapper .card {
+   flex: 0 0 auto;
+    /* Увеличиваем размер здесь */
+    width: 450px;           /* Стало шире */
+    height: 300px;          /* Стало выше */
+    background: #dcd3ca;
+    border-radius: 15px;
+    /* Добавим тень, чтобы они выглядели как "парящие" карточки */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-top: 40px; 
+}
+
+.scrolling-wrapper .card img {
+    width: 100%;            /* Заставляет изображение занимать всю ширину блока .card */
+    height: 100%;           /* Заставляет изображение занимать всю высоту блока .card */
+    object-fit: cover;      /* Сохраняет пропорции изображения и масштабирует его, чтобы заполнить блок */
+    border-radius: 15px;    /* Применяет закругление углов к самому изображению */
+}
