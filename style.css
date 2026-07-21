@@ -5,10 +5,9 @@
 
 body{
     font-family: "Roboto", sans-serif;
-    color:black;
-    background-color:#dcd0b8;
-    line-height: 1.5;
-}
+    color:rgb(16, 15, 15);
+    background-color:#7C9473
+    line-height: 1.5;}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif; /* Твой любимый шрифт для заголовков */
 }
@@ -29,15 +28,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .shapka {
-    display: flex;          /* Всё, что внутри, выстраивается в один ряд */
-    align-items: center;    /* Выравнивает всё по вертикали по центру */
-    justify-content: space-between; /* Расталкивает: лого влево, контакты вправо */
+    display: flex;         
+    align-items: center;   
+    justify-content: space-between; 
 }
 
-.zvonok {
-    display: flex;          /* Внутри блока с контактами тоже включаем ряд */
-    align-items: center;    /* Чтобы номер и кнопка были на одном уровне */
-    gap: 90px;              /* Расстояние между номером и кнопкой */
+#kontakty {
+    display: flex;         
+    align-items: center;    
+    gap: 90px;              
 }
 
 .nomer{
@@ -215,6 +214,7 @@ ul li{
     padding: 10px 20px;
     background-color: #ac9c8d;
     border-radius: 15px;
+    line-height:2;
     
 }
 .oplata h3{
@@ -258,35 +258,36 @@ ul li{
     justify-content: space-between;
     gap: 40px;
     background-color: #dcd3ca; 
-    padding: 40px;
+    padding: 30px;
     border-radius: 25px;
-    margin-top: 50px;
+    margin-top: 30px;
+
 }
 
 .text-part {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
     flex: 1;
 }
 
 .pochti-end h3 {
-    font-size: 32px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     color: #3b3426;
 }
 
 .pochti-end button {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
     background-color: #8b7370;
     color: #fff;
     border-radius: 15px;
     border: 2px solid #3b3426;
-    padding: 10px 25px;
+    padding: 10px 60px;
 }
 
 .pochti-end img {
@@ -301,34 +302,73 @@ ul li{
 
 
 .end{
+    margin-top: 80px;
     background-color: #d3c1b3;
-    
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 3px solid #4a2d09;
+    gap: 30px;
+}
+.end-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.soc-links{
+    display: flex;
+    gap:15px
+}
+.ico-box{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 6px;
+    transition: background-color 0.2s;
+}
+.ico-box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.ico-box :hover{
+    background-color: #af7b76;
+}
+   
 
+.copyraight p{
+    font-size: 20px;
+    font-weight:400;
+    margin: 0;
+    color:#3b3426;
 }
-#kontakty{
-    font-size: 23px;
-    font-weight: 400;
-    padding: 10px;
-}
-.ssilka a{
-    color: black;
-    font-size: 30px;
-}
-.ssilka a:hover{
-    color: #332920;
-}
+
 .end-information{
-    font-size: 22px;
+    font-size: 20px;
     text-align: right;
-    padding: 1px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #3b3426
+}    
+.end-information p{
+    margin:  4px 0;
 }
+
 .kategory a{
     color: black;
-    font-size: 22px;
+    font-size: 20px;
+    text-decoration: none;
 }
 .kategory a:hover{
     color: #47301a;
+    text-decoration: underline;
 }
+
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -387,32 +427,30 @@ ul li{
 }
 .scrolling-wrapper {
     display: flex;
-    flex-wrap: nowrap;     /* Запрещает перенос карточек на новую строку */
-    overflow-x: auto;      /* Появляется полоса прокрутки, если карточек много */
-    gap: 20px;             /* Расстояние между акциями */
-    padding-bottom: 20px;  /* Отступ для красоты */
-    -webkit-overflow-scrolling: touch; /* Плавный скролл на iPhone */
+    flex-wrap: nowrap;     
+    overflow-x: auto;      
+    gap: 20px;             
+    padding-bottom: 20px;  
+    -webkit-overflow-scrolling: touch; 
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
-    height: 8px;           /* Скрывает уродливую полосу прокрутки в некоторых браузерах */
+    height: 8px;           
 }
 
 .scrolling-wrapper .card {
    flex: 0 0 auto;
-    /* Увеличиваем размер здесь */
-    width: 450px;           /* Стало шире */
-    height: 300px;          /* Стало выше */
+    width: 450px;           
+    height: 300px;          
     background: #dcd3ca;
     border-radius: 15px;
-    /* Добавим тень, чтобы они выглядели как "парящие" карточки */
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     margin-top: 40px; 
 }
 
 .scrolling-wrapper .card img {
-    width: 100%;            /* Заставляет изображение занимать всю ширину блока .card */
-    height: 100%;           /* Заставляет изображение занимать всю высоту блока .card */
-    object-fit: cover;      /* Сохраняет пропорции изображения и масштабирует его, чтобы заполнить блок */
-    border-radius: 15px;    /* Применяет закругление углов к самому изображению */
+    width: 100%;            
+    height: 100%;           
+    object-fit: cover;      
+    border-radius: 15px;    
 }
