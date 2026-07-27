@@ -215,7 +215,28 @@
 <section class="pochti-end">
     <div class="text-part">
     <h3>Не нашли подходящий букет?</h3>
-    <button>Собрать индивидуальный букет</button> 
+    <button class="wow-knopka" id="btn-buket">Собрать индивидуальный букет</button> 
+    <div id="buket-modal" class="hidden">
+        <div class="modal-card">
+            <span id="close-buket" class="modal-close">×</span>
+            <h4>Индивидуальный букет</h4>
+            <form id="buket-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <select required>
+                    <option value="" disabled selected>Повод</option>
+                    <option value="birthday"> День рождение</option>
+                    <option value="svadba">Свадьба</option>
+                    <option value="prosto">Просто так</option>
+                    <option value="other">Другое</option>
+                </select>
+                <input type="text" placeholder="Бюджет" required>
+                <textarea placeholder="Расскажите, каким вы видите букет..." rows="5"></textarea>
+                <button type="submit">Отправить пожелания</button>
+            </form>
+        </div>
+    </div>    
+
     </div>
     <div class="img-part"></div>
     <img src="images/3243e0536444b75b8cdda3d2286e608d.jpg">
