@@ -383,19 +383,20 @@ ul li{
 .absolut{
     display: flex;
     gap: 30px;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .photo img{
     width: 500px;
-    height: 700px;
+    height: 600px;
     object-fit: cover;
     display: block;
     border-radius: 40px;
     box-shadow: 0 0 40px var(--glow-pink);
     margin-bottom: 30px;
     max-width: 100%;
+    margin: 10px;
 }
 .redaction{
     flex: 1;
@@ -897,29 +898,40 @@ ul li{
         text-align: left;
         margin: 0;
     }
+    .hero-buttons{
+        display: flex;
+        gap:10px
+    }
     .for-osnova{
-        flex-direction: row;
-        padding: 40px 24px;
-        min-height: auto;
+        flex-direction: column;
+        padding: 24px 20px 70px;
         text-align: left;
         align-items: flex-start;
-        min-height: 420px;
+        justify-content: flex-end;
+        min-height: 460px;
     }
     .osnova{
-        max-width: 60%;
+        max-width: 78%;
     }
     #rek{
         font-size: 26px;
-        margin: 0 0 15px;
+        margin: 0 0 12px;
+        text-shadow: 0 2px 8px rgba(255,255,255,0.5);
     }
     #podrek{
         font-size: 16px;
         margin: 0 0 25px;
+        text-shadow: 0 2px 8px rgba(255,255,255,0.5);
     }
     .zakaz, .info{
-        padding: 12px 28px;
-        font-size: 15px;
+        padding: 10px 10px;
+        font-size: 13px;
         margin-right: 0;
+        white-space: nowrap;
+        flex: 1;
+        min-width: 0;
+        text-align: center;
+        margin: 0;
     }
     #start-katalog, .we{
         font-size: 24px;
