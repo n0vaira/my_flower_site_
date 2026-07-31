@@ -45,3 +45,24 @@ buketForm.addEventListener('submit', function(event){
     buketForm.reset();
     btnModal.classList.add('hidden');
 });
+
+const successModal = document.getElementById('success-modal')
+const closeSuccess = document.getElementById('close-success')
+
+closeSuccess.addEventListener('click', function(){
+    successModal.classList.add('hidden');
+});
+
+zakazatForm.addEventListener('submit', function(event){
+    event.preventDefault();
+    zakazatForm.reset();
+    zakazatModal.classList.add('hidden');
+    successModal.classList.remove('hidden');
+});
+
+buketForm.addEventListener('submit', function(event){
+    event.preventDefault();
+    buketForm.reset();
+    btnModal.classList.add('hidden');
+    successModal.classList.remove('hidden');
+});

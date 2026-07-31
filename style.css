@@ -396,7 +396,7 @@ ul li{
     box-shadow: 0 0 40px var(--glow-pink);
     margin-bottom: 30px;
     max-width: 100%;
-    margin: 10px;
+    margin: 2px;
 }
 .redaction{
     flex: 1;
@@ -834,6 +834,20 @@ ul li{
 }
 .promo-app-text h4{
     font-size: 19px;
+}
+
+#success-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+#success-modal:not(.hidden){
+    display: flex;
 }
 
 @media (max-width:1024px){
