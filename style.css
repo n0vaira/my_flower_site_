@@ -57,12 +57,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-family: "Playfair Display", serif;
     font-size: 40px;
     font-weight: 700;
     color: var(--text-dark);
     letter-spacing: 1px;
     margin: 0;
+}
+.brand-logotip{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+.brand-bouquet{
+    height: 1.1em;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 2px;
+
 }
 
 .adres{
@@ -632,7 +648,7 @@ ul li{
 }
 
 
-.copyraight p{
+.copyright p{
     font-size: 15px;
     font-weight: 400;
     margin: 0;
@@ -908,9 +924,17 @@ ul li{
         margin: 0;
     }
     .logo{
-        font-size: 35px;
+        font-size: 30px;
         text-align: left;
         margin: 0;
+        gap: 5px;
+    }
+    .brand-logotip{
+        align-items: flex-start;
+        gap: 2px;
+    }
+    .brand-bouquet{
+        height: 1em;
     }
     .hero-buttons{
         display: flex;
