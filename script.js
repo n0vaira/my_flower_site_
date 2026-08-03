@@ -66,3 +66,17 @@ buketForm.addEventListener('submit', function(event){
     btnModal.classList.add('hidden');
     successModal.classList.remove('hidden');
 });
+
+const toTopBtn = document.getElementById('to-top');
+
+window.addEventListener('scroll', function(){
+    if (window.scrollY > 400) {
+        toTopBtn.classList.add('show');
+    } else {
+        toTopBtn.classList.remove('show');
+    }
+});
+
+toTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
