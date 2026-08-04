@@ -891,6 +891,66 @@ ul li{
     transform: translateY(-3px);
 }
 
+.letter-section{
+    padding: 60px 20px;
+    background: linear-gradient(170deg, var(--bg-section), var(--bg-warm));
+    border-radius: 32px;
+    max-width: 1520px;
+    margin: 40px auto 0;
+    text-align: center;
+    border: 2px solid var(--core-red);
+}
+.letter-box{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.letter-box h3{
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: var(--text-dark);
+    margin: 0 0 12px;
+}
+.letter-box p{
+    font-size: 16px;
+    color: var(--text-dark);
+    margin: 0 0 24px;
+}
+#letter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+#letter-form input{
+    border: 1.5px solid var(--border-soft);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    background-color: var(--white-petal);
+    color: var(--text-dark);
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+#letter-form input:focus{
+    border-color: var(--magenta-tip);
+}
+#letter-form button{
+    margin-top: 4px;
+    background: linear-gradient(135deg, var(--magenta-tip), var(--core-red));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+#letter-form button:hover {
+    transform: translateY(-2px);
+}    
+
+
 @media (max-width:1024px){
     .shapka{
         padding:16px 20px;
@@ -1045,6 +1105,14 @@ ul li{
         font-size: 18px;
         bottom: 20px;
         right: 20px;
+    }
+    .letter-section{
+        margin: 20px 20px 0;
+        padding: 40px 20px;
+        border-radius: 24px;
+    }
+    .letter-box h3{
+        font-size: 26px;
     }
 }
 

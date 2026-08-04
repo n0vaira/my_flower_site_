@@ -80,3 +80,10 @@ window.addEventListener('scroll', function(){
 toTopBtn.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const letterForm = document.getElementById('letter-form');
+letterForm.addEventListener('submit', function(event){
+    event.preventDefault();
+    letterForm.reset();
+    successModal.classList.remove('hidden')
+})
