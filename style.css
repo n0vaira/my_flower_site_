@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 .nomer{
     font-size: 20px;
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: var(--magenta-soft);
 }
 
@@ -205,16 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 #o-nas-info:not(.hidden){
     display: flex;
 }
-.modal-card{
-    background-color: var(--bg-main);   
-    color: var(--text-dark);
-    max-width: 480px;
-    padding: 32px 36px;
-    border-radius: 20px;
-    width: 90%;
-    max-height: 85vh;
-    overflow-y: auto;
-}
+
 .modal-card{
     position: relative;     
     background-color: var(--bg-main);
@@ -222,22 +213,20 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 480px;
     padding: 32px 36px;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+
 }
 
 .modal-card h4{
     margin: 0 0 30px;
     font-size: 20px;
 }
-.modal-card h6{
+.modal-card h5{
     font-size: 15px;
     margin: 0 0 3px;
 }
-.modal-card h6{
-    font-size: 15px;
-    margin: 0 0 3px;
-}
-
 .modal-card p,
 .modal-card li{
     margin: 0;

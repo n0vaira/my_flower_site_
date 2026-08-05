@@ -6,7 +6,7 @@ btnONas.addEventListener('click', function(){
     infoBlock.classList.toggle('hidden');
 });
 
-closeBtn. addEventListener('click', function(){
+closeBtn.addEventListener('click', function(){
     infoBlock.classList.add('hidden');
 });
 
@@ -23,11 +23,6 @@ closeZakazat.addEventListener('click', function(){
     zakazatModal.classList.add('hidden');
 });
 
-zakazatForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    zakazatForm.reset();
-    zakazatModal.classList.add('hidden');
-});
 
 const btnBuket = document.getElementById('btn-buket');
 const btnModal = document.getElementById('buket-modal');
@@ -38,11 +33,6 @@ btnBuket.addEventListener('click', function(){
     btnModal.classList.toggle('hidden');
 });
 btnClose.addEventListener('click', function(){
-    btnModal.classList.add('hidden');
-});
-buketForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    buketForm.reset();
     btnModal.classList.add('hidden');
 });
 
@@ -70,7 +60,8 @@ buketForm.addEventListener('submit', function(event){
 const toTopBtn = document.getElementById('to-top');
 
 window.addEventListener('scroll', function(){
-    if (window.scrollY > 400) {
+     const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 150;
+    if (window.scrollY > 400 && !nearBottom) {
         toTopBtn.classList.add('show');
     } else {
         toTopBtn.classList.remove('show');
