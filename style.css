@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     justify-content: space-between;
     padding: 24px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--white-petal);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }
 .shapka-left{
     display: flex;
@@ -401,7 +406,6 @@ ul li{
     box-shadow: 0 0 40px var(--glow-pink);
     margin-bottom: 30px;
     max-width: 100%;
-    margin: 2px;
 }
 .redaction{
     flex: 1;
@@ -432,11 +436,11 @@ ul li{
     color: var(--text-dark);
     box-shadow: 0 8px 26px var(--glow-pink);
 }
-.oplata h3{
+.oplata-block h3{
     font-size: 24px;
     color: var(--text-dark);
 }
-.oplata {
+.oplata-block {
     padding: 20px 40px;
     background: linear-gradient(135deg, var(--magenta-soft), var(--bg-section));
     border-radius: 20px;
@@ -745,6 +749,7 @@ ul li{
 }
 .scrolling-wrapper {
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
@@ -762,7 +767,7 @@ ul li{
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .promo-badge{
