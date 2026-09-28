@@ -749,7 +749,6 @@ ul li{
 }
 .scrolling-wrapper {
     display: flex;
-    justify-content: center;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
@@ -768,6 +767,13 @@ ul li{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.promo-card:first-child {
+    margin-left: auto;
+}
+.promo-card:last-child {
+    margin-right: auto;
 }
 
 .promo-badge{
@@ -1055,8 +1061,9 @@ ul li{
     }
     .absolut, .wrapper-info{
         flex-direction: column;
+        gap: 20px;
     }
-    .levo, .oplata{
+    .levo, .oplata-block{
         width: 100%;
     }
     .photo img{
