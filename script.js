@@ -1,80 +1,95 @@
-const btnONas = document.getElementById('btn-o-nas');
-const infoBlock = document.getElementById('o-nas-info');
-const closeBtn = document.getElementById('close-o-nas');
+const modals = {
+    about: document.getElementById('o-nas-info'),
+    order: document.getElementById('zakazat-modal'),
+    custom: document.getElementById('buket-modal'),
+    success: document.getElementById('success-modal')
+};
 
-btnONas.addEventListener('click', function(){
-    infoBlock.classList.toggle('hidden');
+const successTitle = document.getElementById('success-title');
+const successText = document.getElementById('success-text');
+
+function closeAll() {
+    Object.values(modals).forEach(function (modal) {
+        modal.classList.add('hidden');
+    });
+}
+
+function openModal(modal) {
+    closeAll();
+    modal.classList.remove('hidden');
+}
+
+function bindOpen(buttonId, modal) {
+    document.getElementById(buttonId).addEventListener('click', function () {
+        if (modal.classList.contains('hidden')) {
+            openModal(modal);
+        } else {
+            modal.classList.add('hidden');
+        }
+    });
+}
+
+function bindClose(closeId, modal) {
+    const closeEl = document.getElementById(closeId);
+    closeEl.addEventListener('click', function () {
+        modal.classList.add('hidden');
+    });
+    closeEl.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            modal.classList.add('hidden');
+        }
+    });
+}
+
+bindOpen('btn-o-nas', modals.about);
+bindOpen('btn-zakazat', modals.order);
+bindOpen('btn-buket', modals.custom);
+
+bindClose('close-o-nas', modals.about);
+bindClose('close-zakazat', modals.order);
+bindClose('close-buket', modals.custom);
+bindClose('close-success', modals.success);
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closeAll();
+    }
 });
 
-closeBtn.addEventListener('click', function(){
-    infoBlock.classList.add('hidden');
-});
+function showSuccess(title, text) {
+    successTitle.textContent = title;
+    successText.textContent = text;
+    openModal(modals.success);
+}
 
-const btnZakazat = document.getElementById('btn-zakazat');
-const zakazatModal = document.getElementById('zakazat-modal');
-const closeZakazat = document.getElementById('close-zakazat');
-const zakazatForm = document.getElementById('zakazat-form');
+function bindForm(formId, title, text) {
+    const form = document.getElementById(formId);
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        form.reset();
+        showSuccess(title, text);
+    });
+}
 
-btnZakazat.addEventListener('click', function(){
-    zakazatModal.classList.toggle('hidden');
-});
-
-closeZakazat.addEventListener('click', function(){
-    zakazatModal.classList.add('hidden');
-});
-
-
-const btnBuket = document.getElementById('btn-buket');
-const btnModal = document.getElementById('buket-modal');
-const btnClose = document.getElementById('close-buket');
-const buketForm = document.getElementById('buket-form');
-
-btnBuket.addEventListener('click', function(){
-    btnModal.classList.toggle('hidden');
-});
-btnClose.addEventListener('click', function(){
-    btnModal.classList.add('hidden');
-});
-
-const successModal = document.getElementById('success-modal')
-const closeSuccess = document.getElementById('close-success')
-
-closeSuccess.addEventListener('click', function(){
-    successModal.classList.add('hidden');
-});
-
-zakazatForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    zakazatForm.reset();
-    zakazatModal.classList.add('hidden');
-    successModal.classList.remove('hidden');
-});
-
-buketForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    buketForm.reset();
-    btnModal.classList.add('hidden');
-    successModal.classList.remove('hidden');
-});
+bindForm('zakazat-form', 'Успешно!', 'Данные отправлены. Ожидайте звонка оператора.');
+bindForm('buket-form', 'Успешно!', 'Данные отправлены. Ожидайте звонка оператора.');
+bindForm('letter-form', 'Успешно!', 'Данные отправлены. Ожидайте звонка оператора.');
 
 const toTopBtn = document.getElementById('to-top');
 
-window.addEventListener('scroll', function(){
-     const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 150;
+function updateToTop() {
+    const nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 150;
     if (window.scrollY > 400 && !nearBottom) {
         toTopBtn.classList.add('show');
     } else {
         toTopBtn.classList.remove('show');
     }
-});
+}
 
-toTopBtn.addEventListener('click', function() {
+window.addEventListener('scroll', updateToTop, { passive: true });
+updateToTop();
+
+toTopBtn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-
-const letterForm = document.getElementById('letter-form');
-letterForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    letterForm.reset();
-    successModal.classList.remove('hidden')
-})

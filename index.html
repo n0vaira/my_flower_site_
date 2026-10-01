@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ЗабБукет.ru — свежие цветы и авторские букеты с доставкой по Чите. Принимаем заказы с 9:00 до 22:00 без выходных.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <title>ЗабБукет.ru</title>
 </head>
 <body>
@@ -12,8 +15,8 @@
     <header class="shapka">
         <div class="shapka-left">
             <div class="brand-logotip">
-            <h1 class="logo">Заб<img src="images/buketik_bez_fona.png" alt="логотип организации" class="brand-bouquet" width="60" height="66">Букет.ru</h1> <!-- НАЗВАНИЕ ОРГАНИЗАЦИИ -->
-            <p class="adres">г.Чита ул.Ленина, д.29; ул.Бутина, д.123</p>
+            <h1 class="logo" aria-label="ЗабБукет.ru">Заб<img src="images/buketik_bez_fona.png" alt="" class="brand-bouquet" width="60" height="66">Букет.ru</h1> <!-- НАЗВАНИЕ ОРГАНИЗАЦИИ -->
+            <p class="adres">г. Чита, ул. Ленина, д. 29; ул. Бутина, д. 123</p>
             </div>
         </div>
     <div id="kontakty">
@@ -24,58 +27,15 @@
 
 <main>
     <section class="for-osnova">
-    <div class="osnova"> 
+    <div class="osnova">
         <h2 id="rek">Свежие цветы с доставкой по Чите</h2>
         <h3 id="podrek">мы создаем букеты, которые говорят о главном</h3>
         <div class="hero-buttons">
             <button class="zakaz" id="btn-zakazat">Заказать</button>
-            <button class="info" id="btn-o-nas">О нас</button> 
+            <button class="info" id="btn-o-nas">О нас</button>
         </div>
-    </div> 
+    </div>
     </section>
-
-    <div id="zakazat-modal" class="hidden">
-        <div class="modal-card">
-                <span id="close-zakazat" class="modal-close">×</span>
-                <h4>Оформить заказ</h4>
-                <form id="zakazat-form">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <input type="text" placeholder="Какой букет выбрали" required>
-                    <button type="submit">Отправить</button>
-                    <p class="form-consent">
-                        Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных и подтверждаете, что ознакомлены c политикой конфиденциальности
-                    </p>
-                </form>
-        </div>
-    </div>
-
-                
-    <div id="o-nas-info" class="hidden">
-        <div class="modal-card">
-            <span id="close-o-nas" class="modal-close">×</span>  
-            <h4>Немного о нас</h4> 
-        <h5>🌸"ЗабБукет.ru"</h5>
-        <ul>
-            <li>Более 7 лет на рынке: Профессиональные флористы с опытом от 2 000 собранных букетов каждый</li>
-<li>Гарантия свежести: Только свежие цветы с доставкой по Чите. К каждому заказу — кризал и памятка по уходу в подарок</li>
-<li>Индивидуальный подход:Учитываем все пожелания и отправляем фотоотчет готового букета перед доставкой</li>
-        </ul>
-        <h5>Приятные бонусы:</h5>
-        <ul>   
-<li>Бесплатная открытка с вашими теплыми пожеланиями</li>
-<li>Бесплатная доставка при заказе от 4 000 ₽</li>
-<li>500 рублей на первый заказ в мобильном приложении</li>
-        </ul>    
-
-<p>📍 Адреса: ул. Бутина, 123 | ул. Ленина, 29</p>
-
-<p>🕐 График: с 9:00 до 22:00</p>
-
-<p>📞 Телефон:+7 (924) 383-77-07, +7 (914) 803-23-28</p>
-        </div>  
-    </div>
-</main>
 
 <div class="scrolling-wrapper">
 
@@ -95,7 +55,7 @@
     <div class="promo-card">
         <span class="promo-badge">АКЦИЯ</span>
         <h4>Бесплатная доставка<br>по центру Читы</h4>
-        <p class="promo-sub">При заказе букета от</p>
+        <p class="promo-sub">При заказе букета</p>
         <p class="promo-price">от 4 500 ₽</p>
     </div>
 
@@ -113,50 +73,50 @@
     </div>
 
     <div class="promo-card promo-app">
-        <img src="images/QR-app.png" alt="QR-код приложения" class="promo-qr" width="90" height="90">
-        <div> 
+        <img src="images/QR-app.png" alt="QR-код приложения" class="promo-qr" width="90" height="90" loading="lazy">
+        <div>
             <h4>Скачай мобильное приложение</h4>
             <p class="promo-sub">500 бонусов на первый заказ</p>
         </div>
     </div>
 
-</div>    
+</div>
 
 <section id="katalog">
     <h2 id="start-katalog">Выбор клиентов</h2>
 
     <div class="product-grid">
         <div class="product-card">
-            <img src="images/f157b22c-56a3-494a-9d8a-c382509d02d7.webp" alt="букет Нежность утра" width="1200" height="1200">
+            <img src="images/f157b22c-56a3-494a-9d8a-c382509d02d7.webp" alt="букет Нежность утра" width="1200" height="1200" loading="lazy">
             <h3>Нежность утра</h3>
             <p>4 450 ₽</p>
         </div>
 
         <div class="product-card">
-            <img src="images/3d629926-0d1e-46a2-bc41-40be27860287.webp" alt="букет Светлый момент"  width="898" height="899" >
+            <img src="images/3d629926-0d1e-46a2-bc41-40be27860287.webp" alt="букет Светлый момент"  width="898" height="899" loading="lazy">
             <h3>Светлый момент</h3>
             <p>5 440 ₽</p>
         </div>
 
         <div class="product-card">
-            <img src="images/df3fc5b7-75ae-4772-8848-6dbe0aa29189.webp" alt="букет Утренняя дымка" width="800" height="800">
+            <img src="images/df3fc5b7-75ae-4772-8848-6dbe0aa29189.webp" alt="букет Утренняя дымка" width="800" height="800" loading="lazy">
             <h3>Утренняя дымка</h3>
             <p>3 330 ₽</p>
         </div>
 
         <div class="product-card">
-            <img src="images/00b871b1-f7af-47d7-bc74-b8676dcaa1df.webp" alt="букет Весенний тон" width="800" height="800">
+            <img src="images/00b871b1-f7af-47d7-bc74-b8676dcaa1df.webp" alt="букет Весенний тон" width="800" height="800" loading="lazy">
             <h3>Весенний тон</h3>
             <p>6 180 ₽</p>
         </div>
 
-    </div>   
+    </div>
 
     <div class="category-buttons">
-        <a href="https://za-buketom.ru/magazin/folder/sbornye-bukety">Сборные букеты</a>
-        <a href="https://za-buketom.ru/magazin/folder/bukety-s-nadpisyu">Букеты с надписью</a>
-        <a href="https://za-buketom.ru/magazin/folder/kompozicii-s-bablsom">Цветы в коробках</a>
-        <a href="https://za-buketom.ru/magazin/folder/shary">Гелиевые шары</a>
+        <a href="https://za-buketom.ru/magazin/folder/sbornye-bukety" target="_blank" rel="noopener noreferrer">Сборные букеты</a>
+        <a href="https://za-buketom.ru/magazin/folder/bukety-s-nadpisyu" target="_blank" rel="noopener noreferrer">Букеты с надписью</a>
+        <a href="https://za-buketom.ru/magazin/folder/kompozicii-s-bablsom" target="_blank" rel="noopener noreferrer">Цветы в коробках</a>
+        <a href="https://za-buketom.ru/magazin/folder/shary" target="_blank" rel="noopener noreferrer">Гелиевые шары</a>
     </div>
 </section>
 
@@ -165,7 +125,7 @@
     <h2 class="we">Почему именно мы?</h2>
     <div class="absolut">
     <div class="photo">
-        <img src="images/1eea894c-a431-4e4d-8d55-c2abdce17cd5.webp" alt="просто букет" width="1200" height="1200">
+        <img src="images/1eea894c-a431-4e4d-8d55-c2abdce17cd5.webp" alt="просто букет" width="1200" height="1200" loading="lazy">
     </div>
 
     <div class="redaction">
@@ -174,26 +134,25 @@
     <ul>
         <li>Современные букеты</li>
         <li>Гарантия свежести</li>
-        <li>Опытные флористы</li> 
+        <li>Опытные флористы</li>
     </ul>
     </div>
     </div>
 
-    
     <div class="osobennost">
         <div class="block">Быстрая доставка</div>
         <div class="block">Подарок к каждому букету</div>
     </div>
     <div class="osobennost">
         <div class="block">Фото букета перед доставкой</div>
-        <div class="block">Широкий выбор букетов</div> 
+        <div class="block">Широкий выбор букетов</div>
     </div>
 </section>
 
 <section>
     <div class="all">
-    <h2 id="dostavka"><a href="https://za-buketom.ru/oplata-i-dostavka">Оплата и доставка</a></h2>
-    </div>   
+    <h2 id="dostavka"><a href="https://za-buketom.ru/oplata-i-dostavka" target="_blank" rel="noopener noreferrer">Оплата и доставка</a></h2>
+    </div>
     <div class="wrapper-info">
     <div class="levo">
 
@@ -202,53 +161,52 @@
     <p>Принимаем заказы с 9:00 до 22:00, работаем без выходных</p>
     </div>
     <div class="dostavochka">
-    <h3>Доставка</h3>    
-    <p>Радуем наших клиентов в Чите</p>    
-    <p>Доставка по Чите с 7:00 утра до 01:00 ночи </p>    
+    <h3>Доставка</h3>
+    <p>Радуем наших клиентов в Чите</p>
+    <p>Доставка по Чите с 7:00 утра до 01:00 ночи </p>
     </div>
     </div>
-    
 
 <div class="oplata-block">
     <h3 class="top-oplata">Оплата</h3>
-    <ul class="oplata"> 
+    <ul class="oplata">
         <li>Картой на сайте (МИР, Visa, MasterCard)</li>
         <li>Наличными курьеру или в салоне</li>
         <li>Переводом на карту Сбербанка</li>
         <li>Безналичный расчет для юрлиц (с отчетными документами)</li>
     </ul>
 </div>
+</div>
 </section>
 
 <section class="pochti-end">
     <div class="text-part">
     <h3>Не нашли подходящий букет?</h3>
-    <button class="wow-knopka" id="btn-buket">Собрать индивидуальный букет</button> 
-    <div id="buket-modal" class="hidden">
+    <button class="wow-knopka" id="btn-buket">Собрать индивидуальный букет</button>
+    <div id="buket-modal" class="hidden" role="dialog" aria-modal="true">
         <div class="modal-card">
-            <span id="close-buket" class="modal-close">×</span>
+            <span id="close-buket" class="modal-close" role="button" tabindex="0" aria-label="Закрыть">×</span>
             <h4>Индивидуальный букет</h4>
             <form id="buket-form">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Телефон" required>
-                <select required>
+                <input type="text" name="name" autocomplete="name" placeholder="Ваше имя" aria-label="Ваше имя" required>
+                <input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+()\s\-]{10,20}" title="Введите номер телефона, например +7 (924) 000-00-00" placeholder="Телефон" aria-label="Телефон" required>
+                <select name="occasion" aria-label="Повод" required>
                     <option value="" disabled selected>Повод</option>
                     <option value="birthday">День рождения</option>
                     <option value="svadba">Свадьба</option>
                     <option value="prosto">Просто так</option>
                     <option value="other">Другое</option>
                 </select>
-                <input type="text" placeholder="Бюджет" required>
-                <textarea placeholder="Расскажите, каким вы видите букет..." rows="5"></textarea>
+                <input type="text" name="budget" inputmode="numeric" placeholder="Бюджет" aria-label="Бюджет" required>
+                <textarea name="comment" aria-label="Пожелания к букету" placeholder="Расскажите, каким вы видите букет..." rows="5"></textarea>
                 <button type="submit">Отправить пожелания</button>
             </form>
         </div>
-    </div>    
+    </div>
 
     </div>
     <div class="img-part"></div>
-    <img src="images/753b5b12-aa7b-4cc6-8d65-23ef7db057b9.webp" alt="букет"  width="1170" height="1170">
-    </div>
+    <img src="images/753b5b12-aa7b-4cc6-8d65-23ef7db057b9.webp" alt="букет" width="1170" height="1170" loading="lazy">
 </section>
 
 <div class="wow">
@@ -263,7 +221,7 @@
     </div>
 
     <div class="card">
-    <h3>Вячеслав</h3>    
+    <h3>Вячеслав</h3>
     <p>Заказываю цветы не в первый раз и буду обращаться сюда в дальнейшем! Всегда вежливое обслуживание, учитывают все пожелания. Можно сделать надпись на букете. </p>
     </div>
 
@@ -272,75 +230,113 @@
     <p>Спасибо огромное за шикарный букет😊
 Отдельное спасибо сотруднице😘 Очень быстро сориентировала, подсказала. Доставка вовремя)
 Процветания Вашему салону❤️</p>
-    </div>    
+    </div>
 
 </section>
-
 
 <section class="letter-section">
     <div class="letter-box">
         <h3>Подпишитесь на наши новости!</h3>
-        <p>получайте первыми информацию о новых букетах, скидках и секретных промокодах!</p>
+        <p>Получайте первыми информацию о новых букетах, скидках и секретных промокодах!</p>
         <form id="letter-form">
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Ваш адрес эл.почты" required>
+            <input type="text" name="name" autocomplete="name" placeholder="Ваше имя" aria-label="Ваше имя" required>
+            <input type="email" name="email" autocomplete="email" placeholder="Ваш адрес эл.почты" aria-label="Ваш адрес эл.почты" required>
             <button type="submit">Подписаться</button>
         </form>
     </div>
 </section>
 
-<div class="end">
+</main>
+
+<footer class="end">
     <div class="end-left">
     </div>
 
     <div class="copyright">
         <p>© 2018-2026 “ЗабБукет.ru” - доставка цветов в Чите</p>
-    </div>   
+    </div>
 
     <div class="soc-links">
-    <a href="https://vk.com/zabuketom75" class="ssilka_vk">
+    <a href="https://vk.com/zabuketom75" target="_blank" rel="noopener noreferrer" class="ssilka_vk">
         <span class="ico-box">
-            <img src="images/VK.png" alt="ВКонтакте" width="60" height="60">
+            <img src="images/VK.png" alt="ВКонтакте" width="60" height="60" loading="lazy">
         </span>
-    </a>    
-        <a href="https://play.google.com/store/apps/details?id=ru.foodsoul.c8627&hl=ru&pli=1" class="ssilka_app">
-            <span class="ico-box">    
-                <img src="images/google_play.png" alt="google play для скачивания приложения" width="60" height="60">
-            </span>    
-        </a> 
-        <a href="https://apps.apple.com/ru/app/%D0%B7%D0%B0%D0%B1-%D0%B1%D1%83%D0%BA%D0%B5%D1%82-ru-%D1%87%D0%B8%D1%82%D0%B0/id6473037426" class="ssilka_app">
-            <span class="ico-box">    
-                <img src="images/iphone.jpg" alt="app store для скачивания приложения" width="60" height="60">
-            </span>  
-        </a>      
-    </div> 
+    </a>
+        <a href="https://play.google.com/store/apps/details?id=ru.foodsoul.c8627&hl=ru&pli=1" target="_blank" rel="noopener noreferrer" class="ssilka_app">
+            <span class="ico-box">
+                <img src="images/google_play.png" alt="google play для скачивания приложения" width="60" height="60" loading="lazy">
+            </span>
+        </a>
+        <a href="https://apps.apple.com/ru/app/%D0%B7%D0%B0%D0%B1-%D0%B1%D1%83%D0%BA%D0%B5%D1%82-ru-%D1%87%D0%B8%D1%82%D0%B0/id6473037426" target="_blank" rel="noopener noreferrer" class="ssilka_app">
+            <span class="ico-box">
+                <img src="images/iphone.jpg" alt="app store для скачивания приложения" width="60" height="60" loading="lazy">
+            </span>
+        </a>
+    </div>
 
     <div class="kategory">
-        <p><a href="https://za-buketom.ru/politika-konfidencialnosti">Политика конфиденциальности</a></p>
+        <p><a href="https://za-buketom.ru/politika-konfidencialnosti" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a></p>
         <p class="footer">
             <a href="#top">Главная</a> |
             <a href="#katalog">Каталог</a> |
             <a href="#kontakty">Контакты</a>
-        </p>          
-    </div>    
+        </p>
+    </div>
 
     <div class="end-information">
-        <p>Адрес: ул.Ленина, д.29; ул.Бутина, д.123</p>
+        <p>Адрес: ул. Ленина, д. 29; ул. Бутина, д. 123</p>
         <p>пн-вс: 9:00-22:00</p>
         <p>+7 (924) 383-77-07</p>
     </div>
-</div>  
+</footer>
 
-<div id="success-modal" class="hidden">
+<div id="zakazat-modal" class="hidden" role="dialog" aria-modal="true">
+        <div class="modal-card">
+                <span id="close-zakazat" class="modal-close" role="button" tabindex="0" aria-label="Закрыть">×</span>
+                <h4>Оформить заказ</h4>
+                <form id="zakazat-form">
+                    <input type="text" name="name" autocomplete="name" placeholder="Ваше имя" aria-label="Ваше имя" required>
+                    <input type="tel" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+()\s\-]{10,20}" title="Введите номер телефона, например +7 (924) 000-00-00" placeholder="Телефон" aria-label="Телефон" required>
+                    <input type="text" name="bouquet" placeholder="Какой букет выбрали" aria-label="Какой букет выбрали" required>
+                    <button type="submit">Отправить</button>
+                    <p class="form-consent">
+                        Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных и подтверждаете, что ознакомлены c политикой конфиденциальности
+                    </p>
+                </form>
+        </div>
+    </div>
+
+<div id="o-nas-info" class="hidden" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <span id="close-o-nas" class="modal-close" role="button" tabindex="0" aria-label="Закрыть">×</span>
+            <h4>Немного о нас</h4>
+            <h5>🌸"ЗабБукет.ru"</h5>
+            <ul>
+                <li>Более 7 лет на рынке: Профессиональные флористы с опытом от 2 000 собранных букетов каждый</li>
+                <li>Гарантия свежести: Только свежие цветы с доставкой по Чите. К каждому заказу — кризал и памятка по уходу в подарок</li>
+                <li>Индивидуальный подход:Учитываем все пожелания и отправляем фотоотчет готового букета перед доставкой</li>
+            </ul>
+            <h5>Приятные бонусы:</h5>
+            <ul>
+                <li>Бесплатная открытка с вашими теплыми пожеланиями</li>
+                <li>Бесплатная доставка при заказе от 4 000 ₽</li>
+                <li>500 рублей на первый заказ в мобильном приложении</li>
+            </ul>
+            <p>📍 Адреса: ул. Бутина, 123 | ул. Ленина, 29</p>
+            <p>🕐 График: с 9:00 до 22:00</p>
+            <p>📞 Телефон:+7 (924) 383-77-07, +7 (914) 803-23-28</p>
+        </div>
+    </div>
+
+<div id="success-modal" class="hidden" role="dialog" aria-modal="true">
     <div class="modal-card">
-    <span id="close-success" class="modal-close">×</span>
-    <h4>Успешно!</h4>
-    <p>Данные отправлены. Ожидайте звонка оператора.</p>
+    <span id="close-success" class="modal-close" role="button" tabindex="0" aria-label="Закрыть">×</span>
+    <h4 id="success-title">Успешно!</h4>
+    <p id="success-text">Данные отправлены. Ожидайте звонка оператора.</p>
     </div>
 </div>
 
 <button id="to-top" class="to-top-btn" aria-label="Наверх">↑</button>
-
 
 <script src="script.js"></script>
 </body>
